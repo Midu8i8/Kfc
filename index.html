@@ -6,34 +6,43 @@
     <title>KFC Gift Quiz</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #b11313;
             color: #fff;
             text-align: center;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            width: 90%;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
-        header {
-            padding-top: 30px;
-            min-height: 70px;
-        }
-        header h1 {
-            margin: 0;
+        header img {
+            max-width: 150px;
+            margin: 20px 0;
         }
         .button {
             display: inline-block;
             color: #b11313;
             background: #fff;
-            padding: 10px 20px;
+            padding: 15px 25px;
             text-align: center;
-            border-radius: 5px;
+            border-radius: 25px;
             text-decoration: none;
-            margin-top: 20px;
+            margin: 20px 0;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #e6e6e6;
         }
         .question-section {
             display: none;
@@ -44,7 +53,7 @@
         .progress-bar {
             height: 20px;
             background-color: #fff;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-bottom: 20px;
             overflow: hidden;
         }
@@ -52,12 +61,37 @@
             height: 100%;
             background-color: #4caf50;
             width: 0;
+            border-radius: 10px 0 0 10px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Logo</h1>
+        <img src="logo.png" alt="Logo">
     </header>
 
     <section class="container" id="main-section">
@@ -70,9 +104,8 @@
         <div class="progress-bar"><div style="width: 33%;"></div></div>
         <h2>Do you usually go to KFC?</h2>
         <form>
-            <input type="radio" name="q1" value="A"> Yes<br>
-            <input type="radio" name="q1" value="B"> No<br>
-            <br>
+            <label><input type="radio" name="q1" value="A"> Yes</label>
+            <label><input type="radio" name="q1" value="B"> No</label>
             <a href="#" class="button" id="next1">Next</a>
         </form>
     </section>
@@ -81,10 +114,9 @@
         <div class="progress-bar"><div style="width: 66%;"></div></div>
         <h2>Last time went to KFC?</h2>
         <form>
-            <input type="radio" name="q2" value="A"> In this week<br>
-            <input type="radio" name="q2" value="B"> In this month<br>
-            <input type="radio" name="q2" value="C"> Other<br>
-            <br>
+            <label><input type="radio" name="q2" value="A"> In this week</label>
+            <label><input type="radio" name="q2" value="B"> In this month</label>
+            <label><input type="radio" name="q2" value="C"> Other</label>
             <a href="#" class="button" id="next2">Next</a>
         </form>
     </section>
@@ -93,10 +125,9 @@
         <div class="progress-bar"><div style="width: 100%;"></div></div>
         <h2>How much does your bill cost?</h2>
         <form>
-            <input type="radio" name="q3" value="A"> Between 5 to 50<br>
-            <input type="radio" name="q3" value="B"> Between 50 to 150<br>
-            <input type="radio" name="q3" value="C"> More<br>
-            <br>
+            <label><input type="radio" name="q3" value="A"> Between 5 to 50</label>
+            <label><input type="radio" name="q3" value="B"> Between 50 to 150</label>
+            <label><input type="radio" name="q3" value="C"> More</label>
             <a href="#" class="button" id="submit">Submit</a>
         </form>
     </section>
@@ -137,5 +168,8 @@
             window.location.href = '#';
         });
     </script>
+    <footer>
+        © 2024 All rights reserved.
+    </footer>
 </body>
 </html>

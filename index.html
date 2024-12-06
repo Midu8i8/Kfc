@@ -3,73 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walmart Gift Card Giveaway</title>
+    <title>Walmart $100 Gift Card Giveaway</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #6A5ACD, #9370DB);
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #6a1b9a, #2c3e50);
+            color: white;
+            text-align: center;
         }
 
         .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #f9a825;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        .image-section {
             text-align: center;
-            max-width: 600px;
-        }
-
-        .header-image {
-            width: 100%;
-            max-width: 400px;
-            margin-bottom: 20px;
-        }
-
-        .cta-button {
-            display: inline-block;
             margin: 20px 0;
-            padding: 15px 25px;
-            background-color: #FFD700;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .cta-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        .gift-card-img {
+            max-width: 100%;
+            border-radius: 10px;
         }
 
-        h1 {
+        .text-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .text-section h2 {
             font-size: 2em;
+            color: #f9a825;
             margin-bottom: 15px;
         }
 
-        .why-participate {
-            margin-top: 30px;
+        .text-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
         }
 
-        p {
-            line-height: 1.6;
+        .text-section ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        .text-section p {
             font-size: 1.1em;
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            background: #f9a825;
+            color: #ffffff;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #ffc107;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #ffffff;
+        }
+
+        .footer p {
+            font-size: 0.9em;
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://via.placeholder.com/400" alt="Walmart Gift Card" class="header-image">
-        <a href="#" class="cta-button">Learn More</a>
-        <div class="why-participate">
-            <h1>Why Participate?</h1>
-            <p>Don't miss your chance to win a $100 Walmart gift card! Take part in this exciting giveaway and enjoy the shopping spree you've always dreamed of. Click the button to learn more about how you can participate and claim your reward!</p>
+        <header class="header">
+            <h1>Win a $100 Walmart Gift Card!</h1>
+            <p>Your chance to shop big at Walmart for free!</p>
+        </header>
+        <div class="image-section">
+            <img src="giftcard.jpg" alt="Walmart Gift Card" class="gift-card-img">
         </div>
+        <div class="text-section">
+            <h2>Why Participate?</h2>
+            <ul>
+                <li>Shop your favorite items at Walmart for free.</li>
+                <li>No hidden fees or obligations.</li>
+                <li>Easy to enter and win!</li>
+            </ul>
+            <p>Don't miss out on this amazing opportunity! Click below to learn how to get your gift card.</p>
+            <a href="https://smrturl.co/a/sc457b7d427/1514?s1=" class="cta-button">Claim</a>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2024 Walmart Giveaway. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
